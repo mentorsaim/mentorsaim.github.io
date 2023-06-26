@@ -1,20 +1,596 @@
+<!DOCTYPE html>
 <html>
   <head>
-
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="main.js"></script>
-
+    <title>Frega weblet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+    body {font-size: 16px;}
+    img {margin-bottom: -8px;}
+    .mySlides {display: none;}
+    </style>
   </head>
+<body class="w3-content w3-black" style="max-width:1300px;">
 
+<!-- Header with Slideshow -->
+<header class="w3-display-container w3-center">
+  <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" onclick="document.getElementById('register').style.display='block'">Register </button>
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="./images/rewards.png" alt="growthpoints" style="min-width:500px" width="1300" height="600">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge"><b>FREE!</b> registration</h1>
+        <hr class="w3-opacity">
+        <p>Rewarded by using your app</p>
+        <p><button class="w3-button w3-block w3-green w3-round" onclick="document.getElementById('register').style.display='block'">Register </i></button></p>
+      </div>
+    </div>
+  </div>
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="./images/fregaps.png" alt="frega apps" style="min-width:500px" width="1300" height="600">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge w3-text-red"><b>EASY!</b> access</h1>
+        <hr class="w3-opacity">
+        <p>Choose from the Frega library of applications</p>
+        <p><button class="w3-button w3-block w3-red w3-round" onclick="document.getElementById('register').style.display='block'">Register</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="./images/communicate.png" alt="Image 3" style="min-width:500px" width="1300" height="600">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge">Unified Communication</h1>
+        <hr class="w3-opacity">
+        <p>Chat, call, or conference at your fingertips</p>
+        <p><button class="w3-button w3-block w3-indigo w3-round" onclick="document.getElementById('register').style.display='block'">Register</button></p>
+      </div>
+    </div>
+  </div>
+  <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+  <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+</header>
 
-  <body>
+<!-- The App Section -->
+<div class="w3-padding-32 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-col l6 m6">
+      <h1 class="w3-jumbo"><b>Frega</b></h1>
+      <h1 class="w3-xxxlarge w3-text-green"><b>Why use it?</b></h1>
+      <p><span class="w3-xlarge">Its an all in one online living solution.</span><br> Whether you have business social or private needs, you should consider the Frega library of applications as it was built and funded by everyday ordinary folk. <br><br>Freedom global abundance in all matters</p>
+      </div>
+      <div class="w3-col l4 m6 w3-center">
+      <br><br><img src="./images/hands.png" class="w3-image w3-round-large w3-hide-small alt="fregamoney" width="435" height="471">
+      <br><br><br><br><a href="https://www.fregamoney.io/member/skillsmatchplus/mentor/mentorbrows/?uid=U1RiUTNwZ25YaHQrMUQrSDBZUHFWUT09"<button class="w3-button w3-orange w3-round w3-padding-large">Select Consultant</button></a>   
+     </div>
+    </div>
+  </div>
+</div>
 
-    <h1>Welcome to our Landing Page</h1>
-    <p>Thank you for visiting our landing page. We are excited to share our product or service with you.</p>
-    <a href="#" class="button">Learn More</a>
+<!-- Modal -->
+<div id="register" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('register').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
+      <h2 class="w3-wide">REGISTER</h2>
+      <p>To get access to your Freedom Global Abundance</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter username"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter password"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter password again"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-green w3-margin-bottom" onclick="document.getElementById('register').style.display='none'">Register</button>
+    <p>Thank you for registering your Frega account. Click here to read the FAQ’s for Terms & Conditions!</p>
+    </div>
+   </div>
+</div>
 
-  </body>
+<!-- External website Section -->
+<div class="w3-padding-32 w3-light-grey">
+ <div class="w3-row-padding">
+    <div class="w3-col l4 m6 w3-center">
+    <img src="./images/aitech.png" class="w3-image w3-round-large w3-hide-small alt="aitech website" width="335" height="471">
+      <br><br><br><br><a href="https://aitec.w3spaces.com/"<button class="w3-button w3-black w3-round w3-padding-large">Visit Aitech Website</button></a> 
+  </div>
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>
+      Why I use Frega?</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>AiTECH</b> - Solution focused</h1>
+      <p><span class="w3-xlarge"></span>Technology is a rapidly changing field that Aitech is adept at keeping atop of whether testing  Frega or 3rd party applications, consulting on Technological issues, contracts or Team Leadership. <br><br>Frega is affordable and adapts to my business needs</p>
+    </div>
+ </div>
 
+<!-- Frega Apps Section -->
+<div class="w3-container w3-padding-32 w3-white w3-center">
+  <h1 class="w3-jumbo"><b>Frega Apps</b></h1>
+    <div class="w3-row" style="margin-top:32px">
+    <div class="w3-col s3">
+      <img src="./images/fregahublogo.png" class="w3-image w3-round-medium w3-hide-small alt="fregahub" width="150" height="200">
+    </div>
+    <div class="w3-col s3">
+      <img src="./images/knowledgepluswords.png" class="w3-image w3-round-large w3-hide-small alt="knowledgeplus" width="150" height="200">
+    </div>
+    <div class="w3-col s3">
+    <img src="./images/growthpointwords.png" class="w3-image w3-round-large w3-hide-small alt="growthpoints" width="150" height="200">
+    </div>
+    <div class="w3-col s3">
+       <img src="./images/besortedwords.png" class="w3-image w3-round-large w3-hide-small alt="besorted" width="150" height="200">
+    </div>
+  </div>
+
+  <div class="w3-row" style="margin-top:32px">
+    <div class="w3-col s3">
+       <img src="../images/fregarooms.png" class="w3-image w3-round-large w3-hide-small alt="fregarooms" width="150" height="200">
+    </div>
+    <div class="w3-col s3">
+      <img src="./images/rightrade.png" class="w3-image w3-round-large w3-hide-small alt="rightrade" width="150" height="200">
+    </div>  
+    <div class="w3-col s3">
+       <img src="./images/S2Tlogowords.png" class="w3-image w3-round-large w3-hide-small alt="s2t" width="150" height="200">
+    </div>
+    <div class="w3-col s3">
+      <img src="./images/consultant.png" class="w3-image w3-round-large w3-hide-small alt="consultant" width="150" height="200">
+    </div>
+  </div>
   
+  <div class="w3-row" style="margin-top:32px">
+    <div class="w3-col s3">
+      <img src="./images/cloudbook.png" class="w3-image w3-round-large w3-hide-small alt="cloudbook" width="150" height="200">
+    </div>
+    <div class="w3-col s3">
+      <img src="./images/groupventure.png" class="w3-image w3-round-large w3-hide-small alt="groupventures" width="150" height="200">
+    </div>
+    <div class="w3-col s3">
+      <img src="./images/fregamoney.png"  class="w3-image w3-round-large w3-hide-small alt="fregamoney" width="150" height="200">
+    </div>
+    <div class="w3-col s3">
+      <img src="./images/Designurweb.png" class="w3-image w3-round-large w3-hide-small alt="websiteplus" width="150" height="200">
+    </div>
+  </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="w3-padding-32 w3-center w3-light-gray">
+  <h1 class="w3-jumbo"><b>Pricing</b></h1>
+  <p class="w3-large">Start for free or go premium to build financial security</p>
+  <div class="w3-row-padding" style="margin-top:32px">
+    <div class="w3-half w3-section">
+      <ul class="w3-ul w3-card w3-hover-shadow">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16"><b>1</b>  Frega Consultant </li>
+        <li class="w3-padding-16"><b>2</b>  Frega Hubs</li>
+        <li class="w3-padding-16">Access to the free Frega apps library</li>
+        <li class="w3-padding-16"><b>£10</b> reward points for new Frega member registration</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-opacity">$ 0</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('register').style.display='block'">Select</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-half w3-section">
+      <ul class="w3-ul w3-card w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-padding-16">all of basic</li>
+        <li class="w3-padding-16">unlimited Frega hubs + awarded Reward Points</li>
+        <li class="w3-padding-16"><b>1</b>  KnowledgePlus Sub  + awarded Reward Points</li>
+        <li class="w3-padding-16"><b>1</b>  Besorted Sub + awarded Reward Points</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-opacity">$ 39</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('register').style.display='block'">Select</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br>
+</div>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
+  <div class="w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+ <p class="w3-small">This website was designed by aitech. Connect to make your own free website today!</p>
+ <a class="w3-button w3-round-xxlarge w3-small w3-dark-grey w3-margin-bottom" href="https://aitec.w3spaces.com/#service" target="_blank">Start now</a></footer><!-- Footer end. -->
+ <!-- Footer end. -->
+ </footer>
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
 </html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Frega How it works</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+    .mySlides {display:none}
+    .w3-tag, .fa {cursor:pointer}
+    .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+    </style>
+  </head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-light-grey">
+    <div class="w3-col s3">
+      <a href="#home" class="w3-button w3-block">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#apps" class="w3-button w3-block">APPS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#media" class="w3-button w3-block">MEDIA</a>
+    </div>
+  <div class="w3-col s3">
+    <div class="w3-dropdown-hover w3-center w3-light-grey">
+      <a href="#steps" class="w3-button w3-block">STEPS  TO  ABUNDANCE</a>
+      <div class="w3-dropdown-content w3-bar-block w3-border">
+      <a href="#reg" class="w3-bar-item w3-button">Register</a>
+      <a href="#assets" class="w3-bar-item w3-button">Cash Assets</a>
+      <a href="#life" class="w3-bar-item w3-button">Lifestyle</a>
+      <a href="#relate" class="w3-bar-item w3-button">Relationship</a>
+    </div></div>
+     </div>
+   
+ 
+ <!-- Content -->
+<div class="w3-content" id="home" style="max-width:1100px;margin-top:60px;margin-bottom:60px">
+
+  <div class="w3-panel">
+  <h1><span>FREGA: How it works</span></h1>
+  </div>
+
+  <!-- Slideshow -->
+  <div class="w3-container">
+    <div class="w3-display-container mySlides">
+      <img src="./images/financial.png" style="width:100%">
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Financial Freedom</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="./images/communicate.png" style="width:100%">
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom"> Global Communication</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="./images/ecommerce.png" style="width:100%">
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">E-Commerce Abundance</span>
+      </div>
+    </div>
+
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- STEP 1 -->
+  <div class="w3-row w3-container" id="reg">
+    <div class="w3-panel">
+  <h1><span>Steps to Freedom Global Abundance</span></h1>
+  </div>
+    <div class="w3-col l3 m6 w3-light-grey  w3-center w3-container w3-padding-16">
+      <h3>STEP ONE</h3>
+      <img src="./images/vhow_to.gif"  alt="reward point" style="width:100%">
+      <p>Register your Frega account first</p>
+      <button class="w3-button w3-black w3-padding">Register</button>
+    </div>
+
+    <div class="w3-col l3 m6 w3-white w3-text-black w3-container w3-center w3-padding-16">
+      <h4>Mobile Registration</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Y558r0AB9i8" width="180" height="270" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+      </div></div>
+
+    <div class="w3-col l3 m6 w3-white w3-text-black w3-container w3-center w3-padding-16">
+      <h4>Hub Card Profile</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vNe_c7kcDtc" width="180" height="120" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+      <h4>Frega Profile Account</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aN3QsM_Xq8E" width="180" height="120" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+      </div>
+
+    <div class="w3-col l3 m6 w3-white w3-text-black w3-container w3-center w3-padding-16">
+      <h4>Frega Hub Set up</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qlgRszmR1ss" width="180" height="120" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+      <h4>Frega Weblet Setup</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qlgRszmR1ss" width="180" height="120" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+    </div>
+  </div>
+
+ <!-- STEP 2 -->
+  <div class="w3-row w3-container" id="assets">
+  <div class="w3-col l3 m6 w3-grey w3-text-white w3-container w3-center w3-padding-16">
+      <h3>STEP TWO</h3>
+      <img src="../images/cashasgif.gif" alt="cash assets"  style="width:100%">
+      <p>Optimise your finances</p>
+      <button class="w3-button w3-black w3-padding">Start</button>
+    </div>
+
+    <div class="w3-col l3 m6 w3-white w3-text-black w3-container w3-center w3-padding-16">
+      <h4>Mobile Registration</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Y558r0AB9i8" width="180" height="270" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+      </div></div>
+
+    <div class="w3-col l3 m6 w3-white w3-text-black w3-container w3-center w3-padding-16">
+      <h4>Hub Card Profile</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vNe_c7kcDtc" width="180" height="120" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+      <h4>Frega Profile Account</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aN3QsM_Xq8E" width="180" height="120" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+      </div>
+
+    <div class="w3-col l3 m6 w3-white w3-text-black w3-container w3-center w3-padding-16">
+      <h4>Frega Hub Set up</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qlgRszmR1ss" width="180" height="120" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+      <h4>Frega Weblet Setup</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qlgRszmR1ss" width="180" height="120" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+    </div>
+  </div>
+
+  <!-- STEP 3 -->
+  <div class="w3-row w3-container" id="life" >
+   <div class="w3-col l3 m6 w3-light-grey w3-container w3-center w3-padding-16">
+      <h3>STEP THREE</h3>
+      <img src="./images/lfstylegif.gif"  alt="lifestyle"  style="width:100%">
+      <p>Optimise your Lifestyle </p>
+      <button class="w3-button w3-black w3-padding">Start</button>
+    </div>
+
+    <div class="w3-col l3 m6 w3-white w3-text-black w3-container w3-center w3-padding-16">
+      <h4>Mobile Registration</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Y558r0AB9i8" width="180" height="270" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+      </div></div>
+
+    <div class="w3-col l3 m6 w3-white w3-text-black w3-container w3-center w3-padding-16">
+      <h4>Hub Card Profile</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vNe_c7kcDtc" width="180" height="120" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+      <h4>Frega Profile Account</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aN3QsM_Xq8E" width="180" height="120" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+      </div>
+
+    <div class="w3-col l3 m6 w3-white w3-text-black w3-container w3-center w3-padding-16">
+      <h4>Frega Hub Set up</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qlgRszmR1ss" width="180" height="120" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+      <h4>Frega Weblet Setup</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qlgRszmR1ss" width="180" height="120" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+    </div>
+  </div>
+  
+  <!-- STEP 4 -->
+  <div class="w3-row w3-container" id="relate" >
+  <div class="w3-col l3 m6 w3-grey w3-container w3-text-white w3-center w3-padding-16">
+      <h3>STEP FOUR</h3>
+      <img src="./images/relategif.gif" alt="relationships"  style="width:100%">
+      <p>Optimise relationships</p>
+      <button class="w3-button w3-black w3-padding">Start</button>
+    </div>
+
+    <div class="w3-col l3 m6 w3-white w3-text-black w3-container w3-center w3-padding-16">
+      <h4>Mobile Registration</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Y558r0AB9i8" width="180" height="270" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+      </div></div>
+
+    <div class="w3-col l3 m6 w3-white w3-text-black w3-container w3-center w3-padding-16">
+      <h4>Hub Card Profile</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vNe_c7kcDtc" width="180" height="120" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+      <h4>Frega Profile Account</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aN3QsM_Xq8E" width="180" height="120" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+      </div>
+
+    <div class="w3-col l3 m6 w3-white w3-text-black w3-container w3-center w3-padding-16">
+      <h4>Frega Hub Set up</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qlgRszmR1ss" width="180" height="120" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+      <h4>Frega Weblet Setup</h4>
+      <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qlgRszmR1ss" width="180" height="120" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+    </div>
+  </div>
+<!-- Frega Apps Section -->
+<div class="w3-panel" id="apps" >
+  <h1><span>Frega Apps</span></h1>
+  </div>
+    <div class="w3-row" style="margin-top:32px">
+    <div class="w3-col s3">
+      <img src="https://fregaweblet.w3spaces.com/images/fregahublogo.png" class="w3-image w3-round-medium w3-hide-small alt="fregahub" width="150" height="220">
+    </div>
+    <div class="w3-col s3">
+      <img src="https://fregaweblet.w3spaces.com/images/knowledgepluswords.png" class="w3-image w3-round-large w3-hide-small alt="knowledgeplus" width="150" height="200">
+    </div>
+    <div class="w3-col s3">
+    <img src="https://fregaweblet.w3spaces.com/images/growthpointwords.png" class="w3-image w3-round-large w3-hide-small alt="growthpoints" width="150" height="200">
+    </div>
+    <div class="w3-col s3">
+       <img src="https://fregaweblet.w3spaces.com/images/besortedwords.png" class="w3-image w3-round-large w3-hide-small alt="besorted" width="150" height="200">
+    </div>
+  </div>
+
+  <div class="w3-row" style="margin-top:32px">
+    <div class="w3-col s3">
+       <img src="https://fregaweblet.w3spaces.com/images/fregarooms.png" class="w3-image w3-round-large w3-hide-small alt="fregarooms" width="150" height="200">
+    </div>
+    <div class="w3-col s3">
+      <img src="https://fregaweblet.w3spaces.com/images/rightrade.png" class="w3-image w3-round-large w3-hide-small alt="rightrade" width="150" height="200">
+    </div>  
+    <div class="w3-col s3">
+       <img src="https://fregaweblet.w3spaces.com/images/S2Tlogowords.png" class="w3-image w3-round-large w3-hide-small alt="s2t" width="150" height="200">
+    </div>
+    <div class="w3-col s3">
+      <img src="https://fregaweblet.w3spaces.com/images/consultant.png" class="w3-image w3-round-large w3-hide-small alt="consultant" width="150" height="200">
+    </div>
+  </div>
+  
+  <div class="w3-row" style="margin-top:32px">
+    <div class="w3-col s3">
+      <img src="https://fregaweblet.w3spaces.com/images/cloudbook.png" class="w3-image w3-round-large w3-hide-small alt="cloudbook" width="150" height="200">
+    </div>
+    <div class="w3-col s3">
+      <img src="https://fregaweblet.w3spaces.com/images/groupventure.png" class="w3-image w3-round-large w3-hide-small alt="groupventures" width="150" height="200">
+    </div>
+    <div class="w3-col s3">
+      <img src="https://fregaweblet.w3spaces.com/images/fregamoney.png"  class="w3-image w3-round-large w3-hide-small alt="fregamoney" width="150" height="200">
+    </div>
+    <div class="w3-col s3">
+      <img src="https://fregaweblet.w3spaces.com/images/Designurweb.png" class="w3-image w3-round-large w3-hide-small alt="websiteplus" width="150" height="200">
+    </div>
+  </div>
+
+  <!-- MEDIA -->
+  <div class="w3-panel" id="media" >
+   <h1><span>Media</span></h1>
+  </div>
+ <!-- Media Articles-->
+    <div class="w3-container w3-padding-large w3-text-white w3-center">
+    <div class="w3-bar w3-text w3-center w3-round w3-border w3-white">
+      <a href="https://annamaries.w3spaces.com/#blog" class="w3-bar-item w3-button"><i class="fa fa-edit"></i> BLOGS</a>
+      <a href="#video" class="w3-bar-item w3-button"><i class="fa fa-video-camera"></i> VIDEOS</a>
+      <a href="#ebook" class="w3-bar-item w3-button"><i class="fa fa-book"></i> EBOOKS</a>   
+    </div>
+  <br><br>
+   <!-- Image -->
+   <div class="w3-container w3-center">
+    <img src="https://annamaries.w3spaces.com/images/annamain.png" alt="Images by Pixabay" width="1000px" height="400px">
+  </div>
+   <!-- END GRID -->
+   </div>
+
+  <!-- Contact Section -->
+ <div class="w3-container w3-padding-large w3-text-white w3-center" id="contact">
+    <h3><i class="fa fa-envelope"></i>  CONTACT</h3><br
+ <h3 class="w3-padding-32
+  w3-text-white w3-center"></h3>
+    <div class="w3-row-padding w3-padding"><br>
+      <!-- Contact Page -->
+    <div class="w3-content">
+    <div class="w3-half">
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  </div>
+    <!-- Link -->
+    <div class="w3-half w3-padding-large">
+    <div class="w3-button w3-white w3-center w3-padding">
+          <i class="fa fa-facebook-official fa-2x w3-hover-opacity"></i>
+          <i class="fa fa-instagram fa-2x w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p fa-2x w3-hover-opacity"></i>
+          <i class="fa fa-twitter fa-2x w3-hover-opacity"></i>
+          <i class="fa fa-linkedin fa-2x w3-hover-opacity"></i>
+          <br>
+          <a href="https://aimedia4x.weblet.me?r=ZDBZWmRmZ3h0YkU9"><img src="./images/Aimedia4x_logo.gif" alt="aimedia4xlogo" class="w3-circle" style="width:30px"></a>
+          <a href="https://a4xfregatraining.weblet.me?r=ZDBZWmRmZ3h0YkU9"><img src="./images/a4x_logo.gif" alt="a4xlogo" class="w3-circle" style="width:30px"></a>
+          <a href="https://aim.weblet.me?r=Uy9qQXMreE5QdkE9"><img src="./images/aimlogo.gif" alt="aimlogo" class="w3-circle" style="width:30px"></a>
+          <a href="https://aitech.weblet.me/member/designurwebsite/web/hub/?wid=A1DC82CCF04B4B1ABD"><img src="https://annamaries.w3spaces.com/images/atechlogo.gif" alt="aitech logo" class="w3-circle" style="width:30px"></a>
+          <a href="https://annamarie.weblet.me?r=ZDBZWmRmZ3h0YkU9"><img src="https://annamaries.w3spaces.com/images/annamarielogo.gif" alt="annamarielogo" class="w3-circle" style="width:30px"></a>
+          <a href="https://avibe.weblet.me?r=ZDBZWmRmZ3h0YkU9"><img src="./images/avibelogo.gif" alt="avibelogo" class="w3-circle" style="width:30px"></a></div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <h4>Footer</h4>
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>This website was made with W3schools Spaces. Make your own free website today!</p>
+ <a class="w3-button w3-round-xxlarge w3-black w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start now</a>
+ <!-- Footer end. -->
+ </footer>
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
+
